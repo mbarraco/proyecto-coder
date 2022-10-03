@@ -24,3 +24,7 @@ def crear_profesor(request):
     res = template.render(dict_de_contexto)
 
     return HttpResponse(res)
+
+
+def mostrar_inicio(request):
+    return render(request, "AppCoder/inicio.html")
